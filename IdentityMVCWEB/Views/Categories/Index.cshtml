@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<CategoryDto>
+
+<h1 class="text-info text-center">Ürünlerin Kategorileri</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Kategori Adı</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+               <tr>
+                   <td>@item.Id</td>
+                <td>@item.Name</td>
+
+            </tr> 
+        }
+
+    </tbody>
+</table>
